@@ -19,7 +19,11 @@ import {Spanner} from '../../src';
 import {trace, context, Tracer} from '@opentelemetry/api';
 import * as protos from '../../protos/protos';
 import {CloudUtil} from './cloud-util';
-import {OutcomeSender, ExecutionFlowContextInterface, CloudExecutor} from './cloud-executor';
+import {
+  OutcomeSender,
+  ExecutionFlowContextInterface,
+  CloudExecutor,
+} from './cloud-executor';
 import spanner = protos.google.spanner;
 import SpannerAsyncActionRequest = spanner.executor.v1.SpannerAsyncActionRequest;
 import SpannerAsyncActionResponse = spanner.executor.v1.SpannerAsyncActionResponse;
