@@ -58,7 +58,7 @@ export class OutcomeSender {
     return this.sendOutcome(outcome);
   }
 
-  private sendOutcome(outcome: SpannerActionOutcome): {
+  public sendOutcome(outcome: SpannerActionOutcome): {
     code: number;
     details: string;
   } {
